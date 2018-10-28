@@ -1,0 +1,13 @@
+### WR ### Pierre Legendre and Guillaume Guenard - Universite de Montreal
+#
+# Imports
+importFrom("graphics", "lines", "plot", "points")
+#
+# Exports with patterns
+exportPattern("^[^\\.]")
+#
+# Register S3 methods
+S3method(plot, WRperio)
+#
+# Load dynamic library
+useDynLib(WR, .registration = TRUE)

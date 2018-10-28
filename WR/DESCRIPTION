@@ -1,0 +1,13 @@
+Package: WR
+Version: 1.0-1
+Date: 2018-10-11
+Type: Package
+Title: Whittaker-Robinson Periodogram Through a C Function
+Author: Pierre Legendre and Guillaume Guenard 
+Maintainer: Pierre Legendre <Pierre.Legendre@umontreal.ca>
+Description: Whittaker-Robinson periodogram for univariate series of quantitative data, with permutation tests.
+Depends: R (>= 3.0.0)
+Suggests:
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: yes
