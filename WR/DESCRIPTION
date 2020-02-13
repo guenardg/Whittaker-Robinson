@@ -1,6 +1,6 @@
 Package: WR
 Version: 1.0-1
-Date: 2018-10-11
+Date: 2020-02-13
 Type: Package
 Title: Whittaker-Robinson Periodogram Through a C Function
 Author: Pierre Legendre and Guillaume Guenard 
