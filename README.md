@@ -1,4 +1,4 @@
-#Whittaker-Robinson
+# Whittaker-Robinson
 
 Functions and methods to:
 1. calculate the Whittaker-Robinson Periodogram,
