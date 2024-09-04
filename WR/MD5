@@ -1,8 +1,8 @@
-172557b81e34b1ffcd58708dd69840df  ./R/WRperiodogram.R
-767510bf990b421e61e8db0963144c3e  ./DESCRIPTION
-73f6207ca5026d093895e9b014ef7e83  ./NAMESPACE
-4da456373ac4244cf881b694fa66c6fd  ./man/WR-package.Rd
 33a276fc7686befe894a53d79ee647b8  ./man/WRperiodogram.Rd
+4da456373ac4244cf881b694fa66c6fd  ./man/WR-package.Rd
+73f6207ca5026d093895e9b014ef7e83  ./NAMESPACE
+172557b81e34b1ffcd58708dd69840df  ./R/WRperiodogram.R
 303e7a9f4446a2f2d90b876e3c50dcca  ./src/WRperiodogram.h
-2815e153df6544308cfed1ba3b127604  ./src/WRperiodogram.c
+53fb899b1013937972fc441a0de7054d  ./src/WRperiodogram.c
 4844d8766034310c893400d70eb289f1  ./src/registerDynamicSymbol.c
+3b2387cbb52a6f9f920867d32914c694  ./DESCRIPTION

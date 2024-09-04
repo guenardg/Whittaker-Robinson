@@ -7,7 +7,7 @@
   nperm: number of permutations for tests of significance
   mult : methods for correction for multiple testing; "sidak" or "bonferroni"
 
-  License: GPL-2 
+  License: GPL-2
   Authors: Pierre Legendre, September 2012; Guillaume Guenard, March 2014 - October 2018,
   C function
 */
@@ -66,8 +66,8 @@ void WRperiodogram(double* x, int* nx, int* T1, int* T2, double* out, int* nperm
   // Allocate memory for the calculation of column means
   double rnb;
   int i, j;
-  double* cmacc = (double*)Calloc(*T2, double);  // Accumulator
-  int* cmden = (int*)Calloc(*T2, int);           // Denominator
+  double* cmacc = (double*)R_Calloc(*T2, double);  // Accumulator
+  int* cmden = (int*)R_Calloc(*T2, int);           // Denominator
   if(cmacc == NULL || cmden == NULL)
     error("Dynamic memory allocation failure in C function BBCMVAR");
   BBCMVAR(x, nx, T1, T2, out, cmacc, cmden);
@@ -77,7 +77,7 @@ void WRperiodogram(double* x, int* nx, int* T1, int* T2, double* out, int* nperm
       int idx, intmod;
       intmod = INTNUM / (*nx * *T2);  // For the interval to interrupt calculations (proportional to n * *T2).
       intmod = intmod ? intmod : 1;
-      double* outperm = (double*)Calloc(*T2 - *T1 + 1, double);
+      double* outperm = (double*)R_Calloc(*T2 - *T1 + 1, double);
       if(permout == NULL)
 	error("Dynamic memory allocation failure in C function BBCMVAR");
       // Perform permulation test.
@@ -107,9 +107,9 @@ void WRperiodogram(double* x, int* nx, int* T1, int* T2, double* out, int* nperm
 	}
       // End of the permutation loop
       PutRNGstate();
-      Free(outperm);
+      R_Free(outperm);
     }
-  Free(cmden);
-  Free(cmacc);
+  R_Free(cmden);
+  R_Free(cmacc);
   return;
 }
